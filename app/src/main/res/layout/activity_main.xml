@@ -5,14 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        tools:ignore="MissingConstraints">
 
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:padding="5dp"
+            android:text="Data Pemain Indonesia"
+            android:textAlignment="center"
+            android:textSize="19dp"
+            android:textColor="#0C0C0C"/>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
